@@ -14,11 +14,34 @@ class _boardingScreenState extends State<boardingScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            child: Image.asset("assets/images/start.jpg"),
+          Positioned(
+            top: 0.1,
+            child: Container(
+              child: Image.asset("assets/images/Start.png"),
+            ),
           ),
           Positioned(
-            bottom: 50,
+            bottom: 130,
+            left: 16,
+            right: 16,
+            child: Container(child: Image.asset("assets/images/careet.png")),
+          ),
+          Positioned(
+              bottom: 170,
+              left: 16,
+              right: 16,
+              child: Container(
+                child: Image.asset("assets/images/welcome.png"),
+              )),
+          Positioned(
+              bottom: 150,
+              left: 16,
+              right: 16,
+              child: Container(
+                child: Image.asset("assets/images/choice.png"),
+              )),
+          Positioned(
+            bottom: 60,
             left: 16,
             right: 16,
             child: ElevatedButton(
